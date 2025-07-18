@@ -1,7 +1,7 @@
 import { ArrowRight, Users, Calendar, MessageSquare, Zap, Code, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "../assets/bg.jpg";
 
 const features = [
   {
@@ -63,14 +63,14 @@ export default function Homepage() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-center bg-cover"
           style={{ backgroundImage: `url(${heroBg})` }}
         />
-        <div className="absolute inset-0 bg-background/80" />
+        <div className="absolute inset-0  bg-black/40" />
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-8 leading-tight">
               Welcome to{" "}
               <span className="text-gradient">DevCon14</span>
             </h1>

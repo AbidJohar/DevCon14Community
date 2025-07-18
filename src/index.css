@@ -135,7 +135,7 @@
   }
   
   .glass-strong {
-    @apply backdrop-blur-xl bg-card/10 border border-white/20;
+    @apply backdrop-blur-lg bg-card/10 border border-white/20;
   }
 
   /* Gradient utilities */

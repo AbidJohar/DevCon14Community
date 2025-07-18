@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 
 const navigation = [
   { name: "Home", href: "/", icon: Home },
-  { name: "About", href: "/about", icon: Info },
   { name: "Community", href: "/community", icon: Users },
   { name: "Events", href: "/events", icon: Calendar },
   { name: "Blog", href: "/blog", icon: BookOpen },
+  { name: "About", href: "/about", icon: Info },
 ];
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -18,9 +18,9 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen  bg-background">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 glass-strong border-b border-white/10">
+      <nav className="fixed top-0 w-full z-50 glass-strong  shadow-lg shadow-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
