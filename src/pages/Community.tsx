@@ -110,7 +110,7 @@ export default function Community() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Community <span className="text-gradient">Dashboard is comming soon</span>
+            Community <span className="text-gradient">Dashboard is coming soon</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Connect with fellow developers, share knowledge, and grow together
