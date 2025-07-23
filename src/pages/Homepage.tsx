@@ -149,7 +149,7 @@ export default function Homepage() {
               <div className="text-muted-foreground">Active Members</div>
             </div>
             <div className="glass-strong p-8 rounded-2xl">
-              <div className="text-4xl font-bold text-gradient mb-2">90+</div>
+              <div className="text-4xl font-bold text-gradient mb-2">93+</div>
               <div className="text-muted-foreground">Events Hosted</div>
             </div>
             <div className="glass-strong p-8 rounded-2xl">
