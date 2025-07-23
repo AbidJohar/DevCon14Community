@@ -110,17 +110,17 @@ export default function Community() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Community <span className="text-gradient">Dashboard</span>
+            Community <span className="text-gradient">Dashboard is comming soon</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Connect with fellow developers, share knowledge, and grow together
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Sidebar */}
+        {/* <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          // Sidebar 
           <div className="lg:col-span-1 space-y-6">
-            {/* Quick Actions */}
+            // Quick Actions 
             <Card className="glass-strong p-6 border-white/10">
               <h3 className="font-semibold mb-4">Quick Actions</h3>
               <div className="space-y-3">
@@ -135,7 +135,7 @@ export default function Community() {
               </div>
             </Card>
 
-            {/* Categories */}
+            // Categories 
             <Card className="glass-strong p-6 border-white/10">
               <h3 className="font-semibold mb-4">Categories</h3>
               <div className="space-y-2">
@@ -158,7 +158,7 @@ export default function Community() {
               </div>
             </Card>
 
-            {/* Upcoming Events */}
+            // Upcoming Events 
             <Card className="glass-strong p-6 border-white/10">
               <h3 className="font-semibold mb-4">Upcoming Events</h3>
               <div className="space-y-4">
@@ -173,9 +173,9 @@ export default function Community() {
             </Card>
           </div>
 
-          {/* Main Content */}
+          // Main Content 
           <div className="lg:col-span-3 space-y-6">
-            {/* Search and Filters */}
+            // Search and Filters 
             <Card className="glass-strong p-6 border-white/10">
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex-1 relative">
@@ -194,7 +194,7 @@ export default function Community() {
               </div>
             </Card>
 
-            {/* Discussions */}
+            // Discussions 
             <div className="space-y-4">
               {discussions.map((discussion) => (
                 <Card key={discussion.id} className="glass-strong p-6 hover-lift border-white/10">
@@ -252,14 +252,14 @@ export default function Community() {
               ))}
             </div>
 
-            {/* Load More */}
+            // Load More 
             <div className="text-center">
               <Button variant="outline" size="lg" className="glass">
                 Load More Discussions
               </Button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

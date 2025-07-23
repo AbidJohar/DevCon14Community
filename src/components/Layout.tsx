@@ -1,6 +1,15 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Users, Calendar, BookOpen, MessageCircle, Home, Info } from "lucide-react";
+import {
+  Menu,
+  X,
+  Users,
+  Calendar,
+  BookOpen,
+  MessageCircle,
+  Home,
+  Info,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navigation = [
@@ -28,7 +37,9 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
                 <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                   <MessageCircle className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-xl font-bold text-gradient">DevCon14</span>
+                <span className="text-xl font-bold text-gradient">
+                  DevCon14
+                </span>
               </Link>
             </div>
 
@@ -56,12 +67,18 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
             </div>
 
             <div className="hidden md:flex items-center space-x-4">
-              <Button variant="ghost" size="sm">
+              {/* <Button variant="ghost" size="sm">
                 Sign In
-              </Button>
-              <Button size="sm" className="glow-primary">
-                Join Now
-              </Button>
+              </Button> */}
+              <a
+                href="https://forms.gle/BZSuiyqkQeoJyxATA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="sm" className="glow-primary">
+                  Join Now
+                </Button>
+              </a>
             </div>
 
             {/* Mobile menu button */}
@@ -104,12 +121,23 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
               })}
               <div className="pt-4 pb-3 border-t border-white/10">
                 <div className="flex items-center px-3 space-x-3">
-                  <Button variant="ghost" size="sm" className="w-full justify-start">
+                  {/* <Button
+                    variant="ghost"
+                    size="sm"
+                    className="w-full justify-start"
+                  >
                     Sign In
-                  </Button>
+                  </Button> */}
+                    <a
+                href="https://forms.gle/BZSuiyqkQeoJyxATA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                   <Button size="sm" className="w-full glow-primary">
                     Join Now
                   </Button>
+
+              </a>
                 </div>
               </div>
             </div>
@@ -118,9 +146,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       </nav>
 
       {/* Main content */}
-      <main className="pt-16">
-        {children}
-      </main>
+      <main className="pt-16">{children}</main>
 
       {/* Footer */}
       <footer className="bg-card/50 border-t border-white/10 mt-20">
@@ -131,25 +157,40 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
                 <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                   <MessageCircle className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-xl font-bold text-gradient">DevCon14</span>
+                <span className="text-xl font-bold text-gradient">
+                  DevCon14
+                </span>
               </div>
               <p className="text-muted-foreground max-w-md">
-                Connecting IT professionals, developers, and tech enthusiasts to build the future of technology together.
+                Connecting IT professionals, developers, and tech enthusiasts to
+                build the future of technology together.
               </p>
-              <div className="flex space-x-4 mt-6">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-smooth">
+              {/* <div className="flex space-x-4 mt-6">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-smooth"
+                >
                   Twitter
                 </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-smooth">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-smooth"
+                >
                   GitHub
                 </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-smooth">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-smooth"
+                >
                   LinkedIn
                 </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-smooth">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-smooth"
+                >
                   Discord
                 </a>
-              </div>
+              </div> */}
             </div>
             <div>
               <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase mb-4">
@@ -157,29 +198,34 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
               </h3>
               <ul className="space-y-4">
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-smooth">
+                  <a
+                    href="#"
+                    className="text-muted-foreground hover:text-primary transition-smooth"
+                  >
                     Discussions
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-smooth">
+                  <a
+                    href="#"
+                    className="text-muted-foreground hover:text-primary transition-smooth"
+                  >
                     Events
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-smooth">
+                  <a
+                    href="#"
+                    className="text-muted-foreground hover:text-primary transition-smooth"
+                  >
                     Resources
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase mb-4">
-                Newsletter
-              </h3>
-              <p className="text-muted-foreground text-sm mb-4">
-                Stay updated with the latest tech trends and community news.
-              </p>
+              
+              
               <div className="flex">
                 <input
                   type="email"
@@ -194,7 +240,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
           </div>
           <div className="mt-8 pt-8 border-t border-white/10">
             <p className="text-center text-muted-foreground text-sm">
-              © 2024 DevCon14. All rights reserved.
+              © 2025 DevCon14. All rights reserved.
             </p>
           </div>
         </div>

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Search, Filter, Calendar, User, ArrowRight, TrendingUp, BookOpen, Code } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
+// import { Button } from "@/components/ui/button";
+// import { Card } from "@/components/ui/card";
+// import { Input } from "@/components/ui/input";
+// import { Badge } from "@/components/ui/badge";
 
 const categories = [
   { name: "All", count: 127 },
@@ -111,14 +111,14 @@ export default function Blog() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Developer <span className="text-gradient">Blog</span>
+            Developer <span className="text-gradient">Blog page is also comming soon</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Stay updated with the latest trends, tutorials, and insights from the world of software development
           </p>
         </div>
 
-        {/* Featured Post */}
+        {/* Featured Post
         <section className="mb-16">
           <Card className="glass-strong hover-lift border-white/10 overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
@@ -169,12 +169,12 @@ export default function Blog() {
               </div>
             </div>
           </Card>
-        </section>
-
+        </section> */}
+{/* 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Sidebar */}
+          
           <div className="lg:col-span-1 space-y-6">
-            {/* Search */}
+             
             <Card className="glass-strong p-6 border-white/10">
               <h3 className="font-semibold mb-4">Search Articles</h3>
               <div className="relative">
@@ -188,7 +188,7 @@ export default function Blog() {
               </div>
             </Card>
 
-            {/* Categories */}
+             
             <Card className="glass-strong p-6 border-white/10">
               <h3 className="font-semibold mb-4">Categories</h3>
               <div className="space-y-2">
@@ -211,7 +211,7 @@ export default function Blog() {
               </div>
             </Card>
 
-            {/* Popular Tags */}
+            
             <Card className="glass-strong p-6 border-white/10">
               <h3 className="font-semibold mb-4">Popular Tags</h3>
               <div className="flex flex-wrap gap-2">
@@ -223,7 +223,7 @@ export default function Blog() {
               </div>
             </Card>
 
-            {/* Newsletter */}
+            // Newsletter 
             <Card className="glass-strong p-6 border-white/10">
               <h3 className="font-semibold mb-4">Newsletter</h3>
               <p className="text-muted-foreground text-sm mb-4">
@@ -238,9 +238,9 @@ export default function Blog() {
             </Card>
           </div>
 
-          {/* Main Content */}
+         
           <div className="lg:col-span-3 space-y-6">
-            {/* Toolbar */}
+         
             <div className="flex items-center justify-between">
               <h2 className="text-2xl font-bold">
                 {selectedCategory === "All" ? "Latest Articles" : `${selectedCategory} Articles`}
@@ -251,7 +251,7 @@ export default function Blog() {
               </Button>
             </div>
 
-            {/* Articles Grid */}
+          
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {filteredPosts.map((post) => (
                 <Card key={post.id} className="glass-strong hover-lift border-white/10 overflow-hidden">
@@ -305,14 +305,14 @@ export default function Blog() {
               ))}
             </div>
 
-            {/* Load More */}
+            // Load More 
             <div className="text-center">
               <Button variant="outline" size="lg" className="glass">
                 Load More Articles
               </Button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
