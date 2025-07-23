@@ -147,10 +147,6 @@ export default function About() {
                   <div className="text-muted-foreground">Community Members</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-gradient mb-2">150+</div>
-                  <div className="text-muted-foreground">Countries Represented</div>
-                </div>
-                <div className="text-center">
                   <div className="text-4xl font-bold text-gradient mb-2">1M+</div>
                   <div className="text-muted-foreground">Connections Made</div>
                 </div>
