@@ -111,7 +111,7 @@ export default function Blog() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Developer <span className="text-gradient">Blog page is also coming soon</span>
+            Developer <span className="text-gradient">Blog page is coming soon</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Stay updated with the latest trends, tutorials, and insights from the world of software development

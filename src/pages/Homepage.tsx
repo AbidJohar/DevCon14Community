@@ -77,8 +77,7 @@ export default function Homepage() {
               Welcome to <span className="text-gradient">DevCon14</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-              The premier community platform where IT professionals, developers, and tech
-              enthusiasts connect, collaborate, and shape the future of technology together.
+             The premier community platform where IT professionals, developers, and tech enthusiasts connect, collaborate, and share knowledge to learn and grow together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
@@ -141,7 +140,7 @@ export default function Homepage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-primary/10 to-accent/10 relative overflow-hidden">
+      {/* <section className="py-20 bg-gradient-to-r from-primary/10 to-accent/10 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="glass-strong p-8 rounded-2xl">
@@ -162,7 +161,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials Section */}
       <section className="py-20">

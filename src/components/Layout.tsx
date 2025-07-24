@@ -34,9 +34,9 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <Link to="/" className="flex items-center space-x-2">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+                {/* <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                   <MessageCircle className="w-5 h-5 text-white" />
-                </div>
+                </div> */}
                 <span className="text-xl font-bold text-gradient">
                   DevCon14
                 </span>
@@ -151,12 +151,12 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       {/* Footer */}
       <footer className="bg-card/50 border-t border-white/10 mt-20">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="col-span-1 md:col-span-2">
+          <div className=" w-full grid grid-cols-1 md:flex md:justify-between gap-8 ">
+            <div className="col-span-1 md:col-span-2 ">
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+                {/* <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                   <MessageCircle className="w-5 h-5 text-white" />
-                </div>
+                </div> */}
                 <span className="text-xl font-bold text-gradient">
                   DevCon14
                 </span>
@@ -198,35 +198,35 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
               </h3>
               <ul className="space-y-4">
                 <li>
-                  <a
-                    href="#"
+                  <h3
+                    
                     className="text-muted-foreground hover:text-primary transition-smooth"
                   >
                     Discussions
-                  </a>
+                  </h3>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <h3
+                   
                     className="text-muted-foreground hover:text-primary transition-smooth"
                   >
                     Events
-                  </a>
+                  </h3>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <h3
+                     
                     className="text-muted-foreground hover:text-primary transition-smooth"
                   >
                     Resources
-                  </a>
+                  </h3>
                 </li>
               </ul>
             </div>
             <div>
               
               
-              <div className="flex">
+              {/* <div className="flex">
                 <input
                   type="email"
                   placeholder="Enter your email"
@@ -235,7 +235,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
                 <Button size="sm" className="rounded-l-none">
                   Subscribe
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-white/10">

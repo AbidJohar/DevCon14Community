@@ -4,105 +4,51 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Link } from "react-router-dom";
 
 const upcomingEvents = [
   {
     id: 1,
-    title: "React Advanced Patterns Workshop",
-    description: "Deep dive into advanced React patterns including render props, compound components, and custom hooks. Perfect for intermediate to advanced developers.",
-    date: "December 15, 2024",
-    time: "2:00 PM - 6:00 PM EST",
-    location: "Virtual Event",
-    attendees: 127,
-    maxAttendees: 200,
+    title: "AI GET TOGETHER",
+    description: "This event aims to foster collaboration, networking, and knowledge sharing between experienced AI practitioners and aspiring learners",
+    date: "July 26, 2025",
+    time: "11:00 AM",
+    location: "AL Mustafa House, Muslim Town Morr, Lahore",
+    
+    // attendees: 127,
+    // maxAttendees: 200,
     category: "Workshop",
     level: "Advanced",
-    speaker: "Sarah Chen",
-    speakerTitle: "Senior React Engineer at Meta",
+    // speaker: "Sarah Chen",
+    // speakerTitle: "Senior React Engineer at Meta",
     price: "Free",
     featured: true
   },
-  {
-    id: 2,
-    title: "AI & Machine Learning Meetup",
-    description: "Join us for discussions on the latest AI trends, practical ML implementations, and networking with AI professionals.",
-    date: "December 18, 2024",
-    time: "7:00 PM - 9:00 PM EST",
-    location: "San Francisco, CA",
-    attendees: 89,
-    maxAttendees: 150,
-    category: "Meetup",
-    level: "All Levels",
-    speaker: "Dr. Maria Rodriguez",
-    speakerTitle: "AI Research Scientist at OpenAI",
-    price: "Free",
-    featured: false
-  },
-  {
-    id: 3,
-    title: "DevOps Best Practices Conference",
-    description: "Two-day conference covering CI/CD, containerization, monitoring, and cloud-native architectures.",
-    date: "December 22-23, 2024",
-    time: "9:00 AM - 5:00 PM EST",
-    location: "New York, NY",
-    attendees: 245,
-    maxAttendees: 500,
-    category: "Conference",
-    level: "Intermediate",
-    speaker: "Multiple Speakers",
-    speakerTitle: "Industry Experts",
-    price: "$299",
-    featured: true
-  },
-  {
-    id: 4,
-    title: "Frontend Performance Optimization",
-    description: "Learn how to optimize your web applications for maximum performance using modern tools and techniques.",
-    date: "January 8, 2025",
-    time: "1:00 PM - 4:00 PM EST",
-    location: "Virtual Event",
-    attendees: 67,
-    maxAttendees: 100,
-    category: "Workshop",
-    level: "Intermediate",
-    speaker: "Alex Thompson",
-    speakerTitle: "Performance Engineer at Google",
-    price: "$49",
-    featured: false
-  }
+  
 ];
 
 const pastEvents = [
   {
     id: 5,
-    title: "JavaScript Frameworks Comparison",
-    description: "Comprehensive comparison of React, Vue, and Angular for modern web development.",
-    date: "November 20, 2024",
-    attendees: 189,
+    title: "Resume Building Session",
+    description: "Comprehensive session on how to make a market compatible resume.",
+    date: "February 23, 2025",
+    // attendees: 189,
     rating: 4.8,
     category: "Workshop",
-    highlights: ["Framework comparison", "Live coding", "Q&A session"]
+    // highlights: ["Framework comparison", "Live coding", "Q&A session"]
   },
   {
-    id: 6,
-    title: "Cloud Architecture Masterclass",
-    description: "Deep dive into AWS, Azure, and GCP architecture patterns and best practices.",
-    date: "November 15, 2024",
-    attendees: 156,
-    rating: 4.9,
-    category: "Masterclass",
-    highlights: ["Cloud patterns", "Hands-on labs", "Expert panel"]
+    id: 5,
+    title: "Job Preparation Session for Fresh Graduates",
+    description: "A session to equip fresh graduates with key job-hunting skills like resume writing, interview prep, and communication tips.",
+    date: "February 09, 2025",
+    // attendees: 189,
+    rating: 4.8,
+    category: "workshop",
+    // highlights: ["Framework comparison", "Live coding", "Q&A session"]
   },
-  {
-    id: 7,
-    title: "Open Source Contribution Workshop",
-    description: "Learn how to contribute to open source projects and build your developer profile.",
-    date: "November 8, 2024",
-    attendees: 203,
-    rating: 4.7,
-    category: "Workshop",
-    highlights: ["Git workflows", "PR reviews", "Community building"]
-  }
+ 
 ];
 
 export default function Events() {
@@ -153,7 +99,7 @@ export default function Events() {
               {upcomingEvents.map((event) => (
                 <Card 
                   key={event.id} 
-                  className={`glass-strong hover-lift border-white/10 overflow-hidden ${
+                  className={`glass-strong  hover-lift border-white/10 overflow-hidden ${
                     event.featured ? "ring-2 ring-primary/30" : ""
                   }`}
                 >
@@ -198,32 +144,33 @@ export default function Events() {
                       </div>
                       <div className="flex items-center text-sm text-muted-foreground">
                         <Users className="w-4 h-4 mr-2 text-primary" />
-                        {event.attendees} / {event.maxAttendees} attending
+                        {event?.attendees} / {event?.maxAttendees} attending
                       </div>
                     </div>
 
                     <div className="border-t border-white/10 pt-4">
                       <div className="flex items-center justify-between mb-4">
                         <div>
-                          <div className="font-medium text-sm">{event.speaker}</div>
-                          <div className="text-xs text-muted-foreground">{event.speakerTitle}</div>
+                          <div className="font-medium text-sm">{event?.speaker}</div>
+                          <div className="text-xs text-muted-foreground">{event?.speakerTitle}</div>
                         </div>
                         <div className="text-right">
                           <div className="font-bold text-primary">{event.price}</div>
                         </div>
                       </div>
                       
-                      <div className="flex gap-3">
+                      <div className="w-full lex gap-3">
+                        <Link to={"https://forms.gle/BZSuiyqkQeoJyxATA"}>
                         <Button 
-                          className="flex-1 glow-primary" 
-                          disabled={event.attendees >= event.maxAttendees}
+                          className="w-full glow-primary" 
                         >
-                          {event.attendees >= event.maxAttendees ? "Event Full" : "RSVP Now"}
+                           Join Now
                         </Button>
-                        <Button variant="outline" className="glass">
+                        </Link>
+                        {/* <Button variant="outline" className="glass">
                           Learn More
                           <ArrowRight className="w-4 h-4 ml-2" />
-                        </Button>
+                        </Button> */}
                       </div>
                     </div>
                   </div>
@@ -243,8 +190,8 @@ export default function Events() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {pastEvents.map((event) => (
-                <Card key={event.id} className="glass-strong hover-lift border-white/10">
-                  <div className="p-6">
+                <Card key={event.id} className="glass-strong  hover-lift border-white/10">
+                  <div className="p-6 flex flex-col justify-between h-full">
                     <div className="flex items-center space-x-2 mb-3">
                       <Badge variant="outline" className="glass">
                         {event.category}
@@ -263,7 +210,7 @@ export default function Events() {
                       </div>
                       <div className="flex items-center text-sm text-muted-foreground">
                         <Users className="w-4 h-4 mr-2 text-primary" />
-                        {event.attendees} attended
+                        {event?.attendees} attended
                       </div>
                     </div>
 
@@ -274,7 +221,7 @@ export default function Events() {
                       </span>
                     </div>
 
-                    <div className="border-t border-white/10 pt-4">
+                    {/* <div className="border-t border-white/10 pt-4">
                       <h4 className="text-sm font-medium mb-2">Event Highlights:</h4>
                       <ul className="space-y-1">
                         {event.highlights.map((highlight, index) => (
@@ -284,7 +231,7 @@ export default function Events() {
                           </li>
                         ))}
                       </ul>
-                    </div>
+                    </div> */}
 
                     <Button variant="outline" className="w-full mt-4 glass">
                       View Recording
