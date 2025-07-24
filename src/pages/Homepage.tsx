@@ -1,4 +1,12 @@
-import { ArrowRight, Users, Calendar, MessageSquare, Zap, Code, Globe } from "lucide-react";
+import {
+  ArrowRight,
+  Users,
+  Calendar,
+  MessageSquare,
+  Zap,
+  Code,
+  Globe,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import heroBg from "../assets/bg.jpg";
@@ -6,8 +14,8 @@ import heroBg from "../assets/bg.jpg";
 const features = [
   {
     icon: Users,
-    title: " Community",
-    description: "Connect with 150+ developers ",
+    title: "Interships",
+    description: "Opportunity to work on Paid and Unpaid interships ",
   },
   {
     icon: MessageSquare,
@@ -31,7 +39,7 @@ const features = [
   },
   {
     icon: Globe,
-    title: "Open Source",
+    title: "Project Discussion",
     description: "Contribute to community-driven projects",
   },
 ];
@@ -77,7 +85,9 @@ export default function Homepage() {
               Welcome to <span className="text-gradient">DevCon14</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-             The premier community platform where IT professionals, developers, and tech enthusiasts connect, collaborate, and share knowledge to learn and grow together.
+              The premier community platform where IT professionals, developers,
+              and tech enthusiasts connect, collaborate, and share knowledge to
+              learn and grow together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
@@ -85,7 +95,10 @@ export default function Homepage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button size="lg" className="text-lg px-8 py-6 glow-primary hover-lift">
+                <Button
+                  size="lg"
+                  className="text-lg px-8 py-6 glow-primary hover-lift"
+                >
                   Join the Community
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
@@ -115,8 +128,9 @@ export default function Homepage() {
               Why Choose <span className="text-gradient">DevCon14:</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              We connect developers with another, support their skill development and
-              growth, and help them leverage their talents to create real value for society.
+              We connect developers with another, support their skill
+              development and growth, and help them leverage their talents to
+              create real value for society.
             </p>
           </div>
 
@@ -124,11 +138,16 @@ export default function Homepage() {
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <Card key={index} className="glass-strong p-8 hover-lift border-white/10">
+                <Card
+                  key={index}
+                  className="glass-strong p-8 hover-lift border-white/10"
+                >
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6 glow-primary">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
+                  <h3 className="text-xl font-semibold mb-4">
+                    {feature.title}
+                  </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     {feature.description}
                   </p>
@@ -171,20 +190,24 @@ export default function Homepage() {
               What Our <span className="text-gradient">Community</span> Says
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Hear from developers who've transformed their careers with DevCon14
+              Hear from developers who've transformed their careers with
+              DevCon14
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="glass-strong p-8 hover-lift border-white/10">
+              <Card
+                key={index}
+                className="glass-strong flex flex-col justify-between h-full p-8 hover-lift border-white/10"
+              >
                 <div className="mb-6">
                   <p className="text-muted-foreground italic leading-relaxed">
                     "{testimonial.quote}"
                   </p>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mr-4">
+                <div className="flex items-center justify-between">
+                  <div className="w-12 h-12 p-5 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mr-4">
                     <span className="text-white font-semibold">
                       {testimonial.name
                         .split(" ")
@@ -210,11 +233,12 @@ export default function Homepage() {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <div className="glass-strong p-12 rounded-3xl border-white/10">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to <span className="text-gradient">Level Up</span> Your Career?
+              Ready to <span className="text-gradient">Level Up</span> Your
+              Career?
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join thousands of developers who are already building their future with DevCon14.
-              Start connecting, learning, and growing today.
+              Join thousands of developers who are already building their future
+              with DevCon14. Start connecting, learning, and growing today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -222,7 +246,10 @@ export default function Homepage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button size="lg" className="text-lg px-8 py-6 glow-primary hover-lift">
+                <Button
+                  size="lg"
+                  className="text-lg px-8 py-6 glow-primary hover-lift"
+                >
                   Start Your Journey
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
